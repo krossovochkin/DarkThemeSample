@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DarkThemeSample</string>
+    <string name="title_day_night">Day Night Theme</string>
+    <string name="text_button">button</string>
+    <string name="text_text_view">Lorem ipsum dolorum</string>
+    <string name="title_force_dark">Force Dark</string>
+    <string name="title_default">Default</string>
+    <string name="title_no_dark">No Dark</string>
 </resources>
