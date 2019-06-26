@@ -7,10 +7,16 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <FrameLayout android:id="@+id/appPreferencesContainer"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"/>
+
     <Button android:id="@+id/buttonDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appPreferencesContainer"
             app:layout_constraintStart_toStartOf="parent"
             android:text="@string/title_default"/>
 

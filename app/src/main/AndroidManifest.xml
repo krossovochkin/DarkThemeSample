@@ -21,16 +21,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DefaultActivity"
+        <activity android:name=".activity.DefaultActivity"
                   android:theme="@style/AppTheme.Default"/>
 
-        <activity android:name=".DayNightActivity"
+        <activity android:name=".activity.DayNightActivity"
                   android:theme="@style/AppTheme.DayNight"/>
 
-        <activity android:name=".ForceDarkActivity"
+        <activity android:name=".activity.ForceDarkActivity"
                   android:theme="@style/AppTheme.Default.ForceDark"/>
 
-        <activity android:name=".NoDarkActivity"
+        <activity android:name=".activity.NoDarkActivity"
                   android:theme="@style/AppTheme.Default.NoDark"/>
     </application>
 
