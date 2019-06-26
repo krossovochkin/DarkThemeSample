@@ -11,13 +11,15 @@
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  app:layout_constraintTop_toTopOf="parent"
-                 app:layout_constraintStart_toStartOf="parent"/>
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button android:id="@+id/buttonDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/appPreferencesContainer"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/title_default"/>
 
     <Button android:id="@+id/buttonDayNight"
@@ -25,6 +27,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/buttonDefault"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/title_day_night"/>
 
     <Button android:id="@+id/buttonForceDark"
@@ -32,6 +35,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/buttonDayNight"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/title_force_dark"/>
 
     <Button android:id="@+id/buttonNoDark"
@@ -39,6 +43,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/buttonForceDark"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/title_no_dark"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
