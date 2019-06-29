@@ -1,7 +1,9 @@
 package com.krossovochkin.darkthemesample.theme
 
+import android.content.Context
 import android.os.Build
 import androidx.appcompat.app.AppCompatDelegate.*
+import com.krossovochkin.darkthemesample.R
 
 @NightMode
 fun resolveTheme(key: String?): Int = when (key) {
@@ -17,6 +19,30 @@ fun getDefaultThemeKey(): String {
         SYSTEM_DEFAULT
     } else {
         DARK_BATTERY_SAVE
+    }
+}
+
+fun getThemeOptions(): Array<CharSequence> {
+    return if (Build.VERSION.SDK_INT >= 28) {
+        arrayOf(LIGHT, DARK, SYSTEM_DEFAULT)
+    } else {
+        arrayOf(LIGHT, DARK, DARK_BATTERY_SAVE)
+    }
+}
+
+fun getThemeOptionNames(context: Context): Array<CharSequence> {
+    return if (Build.VERSION.SDK_INT >= 28) {
+        arrayOf(
+            context.getString(R.string.theme_option_light),
+            context.getString(R.string.theme_option_dark),
+            context.getString(R.string.theme_option_system)
+        )
+    } else {
+        arrayOf(
+            context.getString(R.string.theme_option_light),
+            context.getString(R.string.theme_option_dark),
+            context.getString(R.string.theme_option_battery)
+        )
     }
 }
 
