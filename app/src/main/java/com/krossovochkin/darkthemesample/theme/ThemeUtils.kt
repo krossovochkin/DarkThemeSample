@@ -15,7 +15,7 @@ fun resolveTheme(key: String?): Int = when (key) {
 }
 
 fun getDefaultThemeKey(): String {
-    return if (Build.VERSION.SDK_INT >= 28) {
+    return if (Build.VERSION.SDK_INT >= 29) {
         SYSTEM_DEFAULT
     } else {
         DARK_BATTERY_SAVE
@@ -23,7 +23,7 @@ fun getDefaultThemeKey(): String {
 }
 
 fun getThemeOptions(): Array<CharSequence> {
-    return if (Build.VERSION.SDK_INT >= 28) {
+    return if (Build.VERSION.SDK_INT >= 29) {
         arrayOf(LIGHT, DARK, SYSTEM_DEFAULT)
     } else {
         arrayOf(LIGHT, DARK, DARK_BATTERY_SAVE)
@@ -31,7 +31,7 @@ fun getThemeOptions(): Array<CharSequence> {
 }
 
 fun getThemeOptionNames(context: Context): Array<CharSequence> {
-    return if (Build.VERSION.SDK_INT >= 28) {
+    return if (Build.VERSION.SDK_INT >= 29) {
         arrayOf(
             context.getString(R.string.theme_option_light),
             context.getString(R.string.theme_option_dark),
