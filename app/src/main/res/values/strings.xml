@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">DarkThemeSample</string>
     <string name="title_day_night">Day Night Theme</string>
     <string name="text_button">button</string>
@@ -8,15 +8,8 @@
     <string name="title_no_dark">No Dark</string>
 
     <string name="theme_preference_key" translatable="false">theme_preference_key</string>
-    <string-array name="theme_entries" tools:ignore="InconsistentArrays">
-        <item>Light</item>
-        <item>Dark</item>
-        <item>Dark in Save Battery mode</item>
-    </string-array>
-
-    <string-array name="theme_entry_values" translatable="false" tools:ignore="InconsistentArrays">
-        <item>light</item>
-        <item>dark</item>
-        <item>dark_battery_save</item>
-    </string-array>
+    <string name="theme_option_light">Light</string>
+    <string name="theme_option_dark">Dark</string>
+    <string name="theme_option_battery">Set by battery saver</string>
+    <string name="theme_option_system">System default</string>
 </resources>

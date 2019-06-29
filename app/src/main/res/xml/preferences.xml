@@ -3,8 +3,6 @@
 
     <ListPreference
             app:key="@string/theme_preference_key"
-            app:entries="@array/theme_entries"
-            app:entryValues="@array/theme_entry_values"
             app:useSimpleSummaryProvider="true"/>
 
 </androidx.preference.PreferenceScreen>
