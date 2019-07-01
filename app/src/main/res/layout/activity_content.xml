@@ -198,7 +198,5 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Book flight"
-            android:layout_marginBottom="24dp"
-            android:textColor="?android:attr/textColorPrimaryInverse"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            android:layout_marginBottom="24dp"/>
 </LinearLayout>
