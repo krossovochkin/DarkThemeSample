@@ -1,36 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".activity.DayNightActivity">
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.DayNightActivity"
+        tools:ignore="HardcodedText">
 
-    <Button android:id="@+id/button1"
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="24dp">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.6"
+                android:text="Flight 131"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:text="$876"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:background="?attr/dividerHorizontal"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+        <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/departTitleTextView"
+                android:layout_width="0dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.87"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="DEPART"/>
+
+        <TextView
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/departDateTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.6"
+                android:text="Sept 9, 2018"/>
+
+        <TextView
+                app:layout_constraintTop_toBottomOf="@id/departTitleTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/airportFromTextView"
+                android:layout_width="0dp"
+                android:textSize="48sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="SEL"/>
+
+        <TextView
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/departDateTextView"
+                android:id="@+id/airportToTextView"
+                android:layout_width="0dp"
+                android:textSize="48sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="JFK"/>
+
+        <TextView
+                android:id="@+id/cityFromTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/airportFromTextView"
+                android:text="Taoyuan Intl"/>
+
+        <TextView
+                android:id="@+id/cityToTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/airportToTextView"
+                android:text="John F. Kennedy Intl"/>
+
+        <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_airplanemode_active_black_24dp"
+                android:tint="@color/colorAccent"
+                tools:ignore="ContentDescription"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:background="?attr/dividerHorizontal"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+        <TextView
+                android:id="@+id/airlineTitleTextView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.6"
+                android:text="Sunny Day Air"/>
+
+        <TextView
+                android:id="@+id/flightCostTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:text="$876"/>
+
+        <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/airlineTitleTextView"
+                android:id="@+id/departureTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.87"
+                android:text="10:30a – 03:30p"/>
+
+        <TextView
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flightCostTextView"
+                android:id="@+id/durationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:alpha="0.6"
+                android:text="18hr"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:background="?attr/dividerHorizontal"
+            android:layout_height="1dp"/>
+
+    <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_button"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:forceDarkAllowed="false"
-            tools:targetApi="q"/>
-
-    <Button android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_button"
-            app:layout_constraintTop_toBottomOf="@id/button1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_text_view"
-            app:layout_constraintTop_toBottomOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_gravity="center"
+            android:text="Book flight"
+            android:layout_marginBottom="24dp"
+            android:textColor="?android:attr/textColorPrimaryInverse"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+</LinearLayout>
