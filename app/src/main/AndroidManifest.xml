@@ -32,6 +32,9 @@
 
         <activity android:name=".activity.NoDarkActivity"
                   android:theme="@style/AppTheme.Default.NoDark"/>
+
+        <activity android:name=".activity.ElevationActivity"
+                  android:theme="@style/AppTheme.DayNight"/>
     </application>
 
 </manifest>
