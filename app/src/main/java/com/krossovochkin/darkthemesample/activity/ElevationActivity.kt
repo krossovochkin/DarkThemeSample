@@ -3,7 +3,7 @@ package com.krossovochkin.darkthemesample.activity
 import android.os.Bundle
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
+import com.google.android.material.card.MaterialCardView
 import com.krossovochkin.darkthemesample.R
 
 class ElevationActivity : AppCompatActivity() {
@@ -12,7 +12,7 @@ class ElevationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_elevation)
 
-        val cardView = findViewById<CardView>(R.id.cardView)
+        val cardView = findViewById<MaterialCardView>(R.id.cardView)
         cardView.cardElevation = 0f
         findViewById<SeekBar>(R.id.seekBar).setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
 
