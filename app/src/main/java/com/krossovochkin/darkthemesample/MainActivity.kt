@@ -4,10 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.krossovochkin.darkthemesample.activity.DayNightActivity
-import com.krossovochkin.darkthemesample.activity.DefaultActivity
-import com.krossovochkin.darkthemesample.activity.ForceDarkActivity
-import com.krossovochkin.darkthemesample.activity.NoDarkActivity
+import com.krossovochkin.darkthemesample.activity.*
 import com.krossovochkin.darkthemesample.theme.AppPreferences
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.buttonNoDark).setOnClickListener {
             startActivity(Intent(this, NoDarkActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.buttonElevation).setOnClickListener {
+            startActivity(Intent(this, ElevationActivity::class.java))
         }
     }
 }

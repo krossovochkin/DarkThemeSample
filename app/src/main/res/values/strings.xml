@@ -6,6 +6,7 @@
     <string name="title_force_dark">Force Dark</string>
     <string name="title_default">Default</string>
     <string name="title_no_dark">No Dark</string>
+    <string name="title_elevation">Elevation</string>
 
     <string name="theme_preference_key" translatable="false">theme_preference_key</string>
     <string name="theme_option_light">Light</string>
